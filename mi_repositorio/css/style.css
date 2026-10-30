@@ -1,0 +1,526 @@
+/* ========================================
+   ESTILOS GENERALES
+======================================== */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+section {
+  scroll-margin-top: 75px;
+}
+
+.nav-link {
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.mobile-link:hover {
+  color: #2563eb;
+}
+
+/* ========================================
+   BOTONES
+======================================== */
+
+.primary-btn,
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 9px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+  border: 1px solid #2563eb;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  color: #2563eb;
+  border: 1px solid #cbd5e1;
+  background: transparent;
+}
+
+.secondary-btn:hover {
+  background: #eff6ff;
+  transform: translateY(-2px);
+}
+
+.dark .secondary-btn {
+  color: #bfdbfe;
+  border-color: #475569;
+}
+
+.dark .secondary-btn:hover {
+  background: #1e293b;
+}
+
+.small-btn {
+  padding: 7px 12px;
+  font-size: 12px;
+}
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+.section {
+  padding: 70px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(1.8rem, 4vw, 2.3rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: #64748b;
+  margin: 0 auto 38px;
+  max-width: 650px;
+}
+
+.dark .section-subtitle {
+  color: #94a3b8;
+}
+
+.info-card {
+  padding: 26px;
+  border-radius: 16px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+}
+
+.dark .info-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+/* ========================================
+   HABILIDADES
+======================================== */
+
+.skill-card {
+  padding: 24px 12px;
+  border-radius: 14px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(15, 23, 42, 0.1);
+}
+
+.skill-card i {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+
+.skill-card h3 {
+  font-weight: 700;
+}
+
+.skill-card p {
+  color: #64748b;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.dark .skill-card {
+  background: #1e293b;
+  border-color: #334155;
+}
+
+.dark .skill-card p {
+  color: #94a3b8;
+}
+
+/* ========================================
+   TARJETAS DE PROYECTOS
+======================================== */
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid #e2e8f0;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(15, 23, 42, 0.12);
+}
+
+.dark .project-card {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.project-cover {
+  min-height: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(135deg, var(--tw-gradient-stops));
+  color: white;
+}
+
+.project-cover i {
+  font-size: 4rem;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 24px;
+  gap: 12px;
+}
+
+.project-tag {
+  color: #2563eb;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.project-body h3 {
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+
+.project-body p {
+  color: #64748b;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.dark .project-body p {
+  color: #cbd5e1;
+}
+
+.project-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.dark .project-actions {
+  border-color: #334155;
+}
+
+.project-actions button {
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.project-actions button:hover {
+  text-decoration: underline;
+}
+
+.project-actions a {
+  font-size: 1.3rem;
+}
+
+.filter-btn {
+  padding: 9px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover {
+  background: #eff6ff;
+}
+
+.filter-btn.active {
+  color: white;
+  background: #2563eb;
+  border-color: #2563eb;
+}
+
+.dark .filter-btn {
+  border-color: #475569;
+}
+
+.dark .filter-btn:hover {
+  background: #1e293b;
+}
+
+/* ========================================
+   ACORDEÓN
+======================================== */
+
+.accordion-item {
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: white;
+}
+
+.dark .accordion-item {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  font-weight: 700;
+}
+
+.accordion-header:hover {
+  background: #f1f5f9;
+}
+
+.dark .accordion-header:hover {
+  background: #1e293b;
+}
+
+.accordion-header i {
+  transition: transform 0.2s ease;
+}
+
+.accordion-content {
+  padding: 18px 20px;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+.dark .accordion-content {
+  border-color: #334155;
+  color: #cbd5e1;
+}
+
+/* ========================================
+   CONTACTO
+======================================== */
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #2563eb;
+  font-size: 1.3rem;
+  transition: transform 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-4px);
+}
+
+.dark .social-link {
+  background: #0f172a;
+  border-color: #475569;
+}
+
+.contact-form {
+  display: grid;
+  gap: 18px;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  background: #f8fafc;
+}
+
+.dark .contact-form {
+  background: #0f172a;
+  border-color: #334155;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.85rem;
+  margin-bottom: 7px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  background: white;
+  color: #1e293b;
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+.dark .contact-form input,
+.dark .contact-form textarea {
+  background: #1e293b;
+  color: white;
+  border-color: #475569;
+}
+
+/* ========================================
+   MODAL DE PROYECTOS
+======================================== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(5px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.modal-overlay.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 550px;
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 30px;
+  border-radius: 18px;
+  background: white;
+  color: #1e293b;
+  display: grid;
+  gap: 20px;
+  transform: translateY(12px);
+  transition: transform 0.25s ease;
+}
+
+.modal-overlay.open .modal-card {
+  transform: translateY(0);
+}
+
+.dark .modal-card {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+.modal-close {
+  position: absolute;
+  top: 15px;
+  right: 18px;
+  padding: 5px 10px;
+  font-size: 1.4rem;
+  color: #64748b;
+}
+
+.modal-close:hover {
+  color: #2563eb;
+}
+
+.demo-note {
+  padding: 12px;
+  border-radius: 8px;
+  color: #92400e;
+  background: #fef3c7;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.dark .demo-note {
+  background: #422006;
+  color: #fde68a;
+}
+
+#scroll-progress {
+  width: 0;
+  transition: width 0.1s linear;
+}
+
+/* ========================================
+   SCROLLBAR
+======================================== */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #475569;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 640px) {
+  .section {
+    padding: 55px 16px;
+  }
+
+  .modal-card {
+    padding: 24px 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}

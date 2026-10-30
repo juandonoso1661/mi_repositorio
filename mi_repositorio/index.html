@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Juan Donoso, estudiante de desarrollo web en Skillnest.">
+  <title>Juan Donoso | Portafolio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    };
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 dark:bg-slate-900 dark:text-gray-100 transition-colors duration-300">
+
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 to-indigo-600 z-50"></div>
+
+  <header
+    class="sticky top-0 z-40 bg-white/90 dark:bg-slate-900/90 backdrop-blur-md border-b border-gray-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold text-blue-600 dark:text-blue-400">&lt;JuanDonoso /&gt;</a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+        <a href="#about" class="nav-link">Sobre mí</a>
+        <a href="#skills" class="nav-link">Habilidades</a>
+        <a href="#projects" class="nav-link">Proyectos</a>
+        <a href="#tasks" class="nav-link">Ejercicios</a>
+        <a href="#contact" class="nav-link">Contacto</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-slate-800" aria-label="Cambiar tema">
+          <i id="theme-icon" class="fas fa-moon"></i>
+        </button>
+        <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg bg-gray-100 dark:bg-slate-800"
+          aria-label="Abrir menú">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <nav id="mobile-menu" class="hidden md:hidden px-4 pb-4 space-y-3">
+      <a href="#about" class="mobile-link block">Sobre mí</a>
+      <a href="#skills" class="mobile-link block">Habilidades</a>
+      <a href="#projects" class="mobile-link block">Proyectos</a>
+      <a href="#tasks" class="mobile-link block">Ejercicios</a>
+      <a href="#contact" class="mobile-link block">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="min-h-[80vh] flex items-center justify-center text-center px-4 py-16">
+      <div class="max-w-3xl">
+        <div
+          class="w-28 h-28 mx-auto rounded-full bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center text-4xl font-bold shadow-xl mb-6">
+          JD</div>
+        <p class="text-blue-600 dark:text-blue-400 font-semibold mb-3">PORTAFOLIO DE DESARROLLO WEB</p>
+        <h1 class="text-4xl sm:text-6xl font-extrabold mb-5">Hola, soy <span
+            class="text-blue-600 dark:text-blue-400">Juan Donoso</span></h1>
+        <h2 class="text-xl sm:text-2xl font-medium text-gray-600 dark:text-gray-300 mb-5">Estudiante de Desarrollo Web ·
+          Skillnest</h2>
+        <p class="text-gray-600 dark:text-gray-400 leading-relaxed max-w-2xl mx-auto">
+          Estudiante de desarrollo web en formación en Skillnest, interesado en crear aplicaciones web funcionales y
+          soluciones tecnológicas que aporten valor a las personas.
+        </p>
+        <div class="flex flex-wrap justify-center gap-4 mt-8">
+          <a href="#projects" class="primary-btn">Ver proyectos</a>
+          <a href="#contact" class="secondary-btn">Contactar</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-white dark:bg-slate-800/50">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="section-title">Perfil profesional</h2>
+        <div class="grid md:grid-cols-2 gap-8 items-center">
+          <div>
+            <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400 mb-4">Mi proceso en Skillnest</h3>
+            <p class="leading-relaxed text-gray-600 dark:text-gray-300 mb-4">
+              Durante mi formación he trabajado en proyectos que combinan desarrollo frontend, lógica de programación y
+              bases de datos.
+            </p>
+            <p class="leading-relaxed text-gray-600 dark:text-gray-300">
+              Mi objetivo es seguir creciendo como desarrollador web, aplicar lo aprendido en proyectos reales y
+              continuar aprendiendo nuevas herramientas y buenas prácticas.
+            </p>
+          </div>
+          <div class="info-card space-y-4">
+            <p><i class="fas fa-graduation-cap text-blue-600 mr-3"></i><strong>Formación:</strong> Skillnest, 2026</p>
+            <p><i class="fas fa-code text-blue-600 mr-3"></i><strong>Enfoque:</strong> Frontend y backend</p>
+            <p><i class="fas fa-code-branch text-blue-600 mr-3"></i><strong>Herramientas:</strong> Git y GitHub</p>
+            <p><i class="fas fa-lightbulb text-blue-600 mr-3"></i><strong>Intereses:</strong> Aplicaciones web y
+              tecnología</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="section-title">Tecnologías y habilidades</h2>
+        <p class="section-subtitle">Herramientas y lenguajes trabajados durante mi formación.</p>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5">
+          <div class="skill-card"><i class="fab fa-html5 text-orange-500"></i>
+            <h3>HTML5</h3>
+            <p>Estructura web</p>
+          </div>
+          <div class="skill-card"><i class="fab fa-css3-alt text-blue-500"></i>
+            <h3>CSS3</h3>
+            <p>Diseño adaptable</p>
+          </div>
+          <div class="skill-card"><i class="fab fa-js text-yellow-400"></i>
+            <h3>JavaScript</h3>
+            <p>Interactividad</p>
+          </div>
+          <div class="skill-card"><i class="fab fa-git-alt text-orange-600"></i>
+            <h3>Git</h3>
+            <p>Control de versiones</p>
+          </div>
+          <div class="skill-card"><i class="fab fa-github"></i>
+            <h3>GitHub</h3>
+            <p>Repositorios</p>
+          </div>
+          <div class="skill-card"><i class="fab fa-python text-yellow-500"></i>
+            <h3>Python</h3>
+            <p>Programación</p>
+          </div>
+          <div class="skill-card"><i class="fas fa-server text-green-500"></i>
+            <h3>Flask</h3>
+            <p>Aplicaciones web</p>
+          </div>
+          <div class="skill-card"><i class="fas fa-database text-indigo-500"></i>
+            <h3>MySQL</h3>
+            <p>Bases de datos</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section bg-white dark:bg-slate-800/50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="section-title">Mis proyectos</h2>
+        <p class="section-subtitle">Algunos proyectos desarrollados durante mi proceso de aprendizaje.</p>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="frontend">Frontend</button>
+          <button class="filter-btn" data-filter="python">Python / Backend</button>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <article class="project-card" data-category="frontend" data-title="SignSpeak AI"
+            data-description="Prototipo de reconocimiento de gestos inspirado en la lengua de señas. Utiliza la cámara y herramientas de inteligencia artificial para reconocer determinados gestos y mostrar una interpretación."
+            data-tech="HTML, CSS, JavaScript y MediaPipe" data-demo=""
+            data-repo="https://github.com/tuli-rh/pagina_informativa_SignSpeakAI.git">
+            <div class="project-cover from-teal-800 to-cyan-600"><i class="fas fa-hands-asl-interpreting"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Frontend · Inteligencia artificial</span>
+              <h3>SignSpeak AI</h3>
+              <p>Prototipo web de reconocimiento de gestos para apoyar la comunicación.</p>
+              <div class="project-actions">
+                <button class="open-modal-btn">Ver detalles <span>→</span></button>
+                <a href="https://github.com/juandonoso1661" target="_blank" rel="noopener noreferrer"
+                  aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="python" data-title="VoluntaMe"
+            data-description="Aplicación web que conecta personas con iniciativas comunitarias. Permite organizar misiones de ayuda y participar en actividades solidarias. Fue desarrollada con una estructura MVC y base de datos."
+            data-tech="Python, Flask, MySQL, Jinja2 y Bcrypt" data-demo=""
+            data-repo="https://github.com/juandonoso1661/skillnest_fullstack/tree/517adaa3bf6e6d7a2c5d66a06a0a28058070e80b/python/core/examen_voluntame_juan_donoso_11-02-2026">
+            <div class="project-cover from-emerald-700 to-green-500"><i class="fas fa-hand-holding-heart"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Python · Aplicación web</span>
+              <h3>VoluntaMe</h3>
+              <p>Plataforma para conectar personas con misiones de ayuda comunitaria.</p>
+              <div class="project-actions">
+                <button class="open-modal-btn">Ver detalles <span>→</span></button>
+                <a href="https://github.com/juandonoso1661/skillnest_fullstack" target="_blank"
+                  rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="python" data-title="BookHub"
+            data-description="Aplicación web para administrar libros y usuarios, con registro, inicio de sesión, validación de datos y base de datos relacional."
+            data-tech="Python, Flask, MySQL, PyMySQL, Jinja2 y Bcrypt"
+            data-demo="https://github.com/juandonoso1661/skillnest_fullstack/tree/f83e818e6aeb2e217dcb94b25a449ae3c6802eb4/python/core/bookhub(certificacion)"
+            data-repo="https://github.com/juandonoso1661/skillnest_fullstack">
+            <div class="project-cover from-indigo-800 to-violet-600"><i class="fas fa-book-open"></i></div>
+            <div class="project-body">
+              <span class="project-tag">Python · Base de datos</span>
+              <h3>BookHub</h3>
+              <p>Aplicación para gestionar libros y usuarios con autenticación.</p>
+              <div class="project-actions">
+                <button class="open-modal-btn">Ver detalles <span>→</span></button>
+                <a href="https://github.com/juandonoso1661/skillnest_fullstack" target="_blank"
+                  rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tasks" class="section">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="section-title">Ejercicios y prácticas</h2>
+        <p class="section-subtitle">Aprendizajes desarrollados durante las sesiones de clase.</p>
+        <div class="space-y-4">
+          <div class="accordion-item">
+            <button class="accordion-header"><span>01. Manipulación del DOM con JavaScript</span><i
+                class="fas fa-chevron-down"></i></button>
+            <div class="accordion-content hidden">Prácticas de selección de elementos, eventos de clic y actualización
+              dinámica del contenido HTML.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header"><span>02. Diseño responsive</span><i
+                class="fas fa-chevron-down"></i></button>
+            <div class="accordion-content hidden">Maquetación adaptable a móviles, tablets y computadores mediante
+              Flexbox, Grid y estilos CSS.</div>
+          </div>
+          <div class="accordion-item">
+            <button class="accordion-header"><span>03. Git y GitHub</span><i class="fas fa-chevron-down"></i></button>
+            <div class="accordion-content hidden">Uso de repositorios, commits y publicación de proyectos mediante
+              GitHub Pages.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-white dark:bg-slate-800/50">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="section-title">¡Conectemos!</h2>
+        <p class="section-subtitle">Puedes contactarme o visitar mis perfiles profesionales.</p>
+
+        <div
+          class="inline-flex flex-wrap items-center justify-center gap-3 p-4 rounded-full bg-blue-50 dark:bg-slate-900 border border-blue-200 dark:border-slate-700 mb-8">
+          <i class="fas fa-envelope text-blue-600"></i>
+          <span id="email-text">juanjosedonoso.2008@gmail.com</span>
+          <button id="copy-email-btn" class="primary-btn small-btn">Copiar correo</button>
+        </div>
+
+        <div class="flex justify-center gap-5 mb-10">
+          <a class="social-link" href="https://www.linkedin.com/in/juan-jose-donoso-vargas-0977823b9/" target="_blank"
+            rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-link" href="https://github.com/juandonoso1661/skillnest_fullstack" target="_blank"
+            rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+
+        <form id="contact-form" class="contact-form text-left">
+          <div>
+            <label for="name">Nombre</label>
+            <input type="text" id="name" required minlength="2" placeholder="Tu nombre">
+          </div>
+          <div>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" required placeholder="tu@correo.com">
+          </div>
+          <div>
+            <label for="message">Mensaje</label>
+            <textarea id="message" rows="4" required minlength="5" placeholder="Escribe tu mensaje"></textarea>
+          </div>
+          <button type="submit" class="primary-btn w-full">Preparar correo</button>
+          <p id="form-status" class="hidden text-sm mt-3" role="status"></p>
+        </form>
+        <p class="text-xs text-gray-500 dark:text-gray-400 mt-4">El formulario abre tu aplicación de correo; no envía
+          datos a un servidor.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer
+    class="py-8 border-t border-gray-200 dark:border-slate-800 text-center text-sm text-gray-500 dark:text-gray-400">
+    <p>© 2026 Juan Donoso · Portafolio de Desarrollo Web</p>
+  </footer>
+
+  <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <button id="close-modal-btn" class="modal-close" aria-label="Cerrar ventana"><i class="fas fa-times"></i></button>
+      <h2 id="modal-title" class="text-2xl font-bold pr-8">Título del proyecto</h2>
+      <p id="modal-description" class="text-gray-600 dark:text-gray-300 leading-relaxed"></p>
+      <div>
+        <strong class="text-xs uppercase tracking-wide text-gray-500">Tecnologías utilizadas</strong>
+        <p id="modal-tech" class="text-blue-600 dark:text-blue-400 font-semibold mt-1"></p>
+      </div>
+
+      <div class="flex flex-wrap gap-3 pt-4 border-t border-gray-200 dark:border-slate-700">
+        <a id="modal-repo" href="https://github.com/juandonoso1661" target="_blank" rel="noopener noreferrer"
+          class="secondary-btn">Ver Código en GitHub</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
